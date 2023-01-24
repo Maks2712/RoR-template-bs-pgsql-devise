@@ -1,0 +1,17 @@
+<%= form_with model: example, class: "btn btn-outline-success" do |form| %>
+  <% if example.errors.any? %>
+    <div>
+      <h2><%= pluralize(example.errors.count, "error") %> prohibited this example from being saved:</h2>
+
+      <ul>
+        <% example.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div >
+    <%= form.submit %>
+  </div>
+<% end %>
