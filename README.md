@@ -1,3 +1,3 @@
-# No CSS template all css across asset pipeline
+# Added Bootstrap 5
 # Added Postgres
 # Added Devise
